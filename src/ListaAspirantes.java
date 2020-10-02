@@ -80,17 +80,8 @@ public class ListaAspirantes {
 		
 		Scanner ent = new Scanner(System.in);
 		RegistroAspirantes ra = new RegistroAspirantes();
-		
-		/*String redes[] = {"FB", "TW", "IG"};
-		for (String string : redes) {
-			System.out.println(string);
-		}
-		
-		ra.agregarAspirante(new Aspirante("1", (byte)1, redes , 1));
-		
-		ra.mostrarAspirantes();
-		*/
-		boolean salir = true;
+
+		boolean salir = false;
 		
 		do {
 			System.out.println("1) Agregar aspirante");
@@ -99,7 +90,7 @@ public class ListaAspirantes {
 			System.out.println("4) Salir");
 			
 			try {
-				System.out.println("Elije una opción:");
+				System.out.println("Elige una opción:");
                 int op = ent.nextInt();
                 
                 switch (op) {
